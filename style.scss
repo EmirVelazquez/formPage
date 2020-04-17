@@ -1,6 +1,13 @@
-body {
-    background-color: mediumorchid;
-    h1 {
-        color: blanchedalmond;
+html {
+    background: url(assets/espressoBackground.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    body {
+        background-color: mediumorchid;
+        h1 {
+            color: blanchedalmond;
+        }
     }
 }
