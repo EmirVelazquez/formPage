@@ -5,53 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Description" content="Survey form page for coffee shops in Dallas, Texas.">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&family=Raleway&display=swap"
+        rel="stylesheet">
     <!--Custom CSS-->
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Survey Form</title>
 </head>
 
 <body>
-    <h1 id="title">Coffee Shops in the big D.</h1>
-    <p id="description">Thank you for taking the time to help us identify the best coffee shops in the metroplex.</p>
-    <form id="survey-form">
-        <label for="name" id="name-label">Full Name</label>
-        <input type="text" placeholder="First Last" id="name" required>
-        <label for="email" id="email-label">Email</label>
-        <input type="email" placeholder="youremail@email.com" id="email" required>
-        <label for="number" id="number-label">Contact Number</label>
-        <input type="number" placeholder="000-000-0000" id="number" required min="10" max="10">
-        <select id="dropdown">
-            <option value="choice1">Choice 1</option>
-            <option value="choice2">Choice 2</option>
-            <option value="choice3">Choice 3</option>
-            <option value="choice4">Choice 4</option>
-            <option value="choice5">Choice 5</option>
-            <option value="choice6">Choice 6</option>
-        </select>
-        <label>Please select one of the following:</label>
-        <input type="radio" name="coffee" id="option1" value="bloop">
-        <label for="option1">First Option</label>
-        <input type="radio" name="coffee" id="option2" value="bloop">
-        <label for="option2">Second Option</label>
-        <input type="radio" name="coffee" id="option3" value="bloop">
-        <label for="option3">Third Option</label>
-        <p>What would you like to see? (Check all that apply)</p>
-        <input type="checkbox" id="check1" value="check1">
-        <label for="check1">Check One</label>
-        <input type="checkbox" id="check2" value="check2">
-        <label for="check2">Check Two</label>
-        <input type="checkbox" id="check3" value="check3">
-        <label for="check3">Check Three</label>
-        <input type="checkbox" id="check4" value="check4">
-        <label for="check4">Check Four</label>
-        <input type="checkbox" id="check5" value="check5">
-        <label for="check5">Check Five</label>
-        <input type="checkbox" id="check6" value="check6">
-        <label for="check6">Check Six</label>
-        <p>Please provide any comments or suggestions:</p>
-        <textarea></textarea>
-        <button id="submit">Submit</button>
-    </form>
+    <div class="container-fluid" id="header-container">
+        <div class="row">
+            <div class="col-sm-12 headerRow">
+                <h1 id="title">Best Coffee Shops in Dallas</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 headerRow">
+                <p id="description">Thank you for taking the time to help us identify the best coffee shops in the
+                    big D.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="form-container">
+        <form id="survey-form">
+            <div class="row">
+                <div class="col-sm-12 formText">
+                    <label for="name" id="name-label">Full Name</label>
+                    <input type="text" placeholder="First Last" id="name" required>
+                </div>
+            </div>
+            <label for="email" id="email-label">Email</label>
+            <input type="email" placeholder="youremail@email.com" id="email" required>
+            <label for="number" id="number-label">Contact Number</label>
+            <input type="number" placeholder="000-000-0000" id="number" required min="10" max="10">
+            <select id="dropdown">
+                <option value="choice1">Choice 1</option>
+                <option value="choice2">Choice 2</option>
+                <option value="choice3">Choice 3</option>
+                <option value="choice4">Choice 4</option>
+                <option value="choice5">Choice 5</option>
+                <option value="choice6">Choice 6</option>
+            </select>
+            <label>Please select one of the following:</label>
+            <input type="radio" name="coffee" id="option1" value="bloop">
+            <label for="option1">First Option</label>
+            <input type="radio" name="coffee" id="option2" value="bloop">
+            <label for="option2">Second Option</label>
+            <input type="radio" name="coffee" id="option3" value="bloop">
+            <label for="option3">Third Option</label>
+            <p>What would you like to see? (Check all that apply)</p>
+            <input type="checkbox" id="check1" value="check1">
+            <label for="check1">Check One</label>
+            <input type="checkbox" id="check2" value="check2">
+            <label for="check2">Check Two</label>
+            <input type="checkbox" id="check3" value="check3">
+            <label for="check3">Check Three</label>
+            <input type="checkbox" id="check4" value="check4">
+            <label for="check4">Check Four</label>
+            <input type="checkbox" id="check5" value="check5">
+            <label for="check5">Check Five</label>
+            <input type="checkbox" id="check6" value="check6">
+            <label for="check6">Check Six</label>
+            <p>Please provide any comments or suggestions:</p>
+            <textarea></textarea>
+            <button id="submit">Submit</button>
+        </form>
+    </div>
     <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
         href="https://unsplash.com/@kafgaf?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
         target="_blank" rel="noopener noreferrer"
@@ -65,5 +88,12 @@
 </body>
 <!--CDN Link for testing-->
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!--Bootstrap Scripts-->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 
 </html>

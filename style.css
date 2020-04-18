@@ -5,10 +5,32 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
-html body h1 {
-  background-color: #003366;
-  opacity: 0.6;
-  color: blanchedalmond;
+html body {
+  background-color: transparent;
+  font-family: "Raleway", sans-serif;
+  color: #f5f5dc;
+}
+html body #header-container {
+  background-color: transparent;
+  margin: 40px 0 20px 0;
+}
+html body #title {
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+  font-size: 60px;
+}
+html body #title, html body #description {
+  text-shadow: 0px 0px 20px #000000;
+}
+html body #form-container {
+  background: rgba(0, 51, 102, 0.6);
+  border-radius: 4px;
+  padding: 40px;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
