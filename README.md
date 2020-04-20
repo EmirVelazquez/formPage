@@ -12,4 +12,4 @@ Part of freeCodeCamp.org responsive web design curriculum requirement. Objective
 https://emirvelazquez.github.io/formPage/
 
 ## Preview
-![](assets/surveyPage.png)
+![](assets/surveyPreview.gif)
