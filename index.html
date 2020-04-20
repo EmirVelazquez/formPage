@@ -17,110 +17,167 @@
 </head>
 
 <body>
-    <div class="container" id="header-container">
-        <div class="row">
-            <div class="col-sm-12 headerRow">
-                <h1 id="title">Best Coffee Shops in Dallas</h1>
+    <div id="main">
+        <div class="container" id="header-container">
+            <div class="row">
+                <div class="col-sm-12 headerRow">
+                    <h1 id="title">Best Coffee Shops in Dallas</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 headerRow">
+                    <p id="description">Thank you for taking the time to help us identify the top rated coffee shop in
+                        the
+                        big D.</p>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-12 headerRow">
-                <p id="description">Thank you for taking the time to help us identify the top rated coffee shop in
-                    the
-                    big D.</p>
-            </div>
+        <div class="container" id="form-container">
+            <form id="survey-form">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name" id="name-label">Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your name" id="name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email" id="email-label">Email</label>
+                        <input type="email" class="form-control" placeholder="Enter your email" id="email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="number" id="number-label">Age (Optional)</label>
+                        <input type="number" class="form-control" placeholder="Age" id="number" min="1" max="100">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="dropdown">Which coffee shop do you prefer?</label>
+                        <select id="dropdown" class="form-control">
+                            <option value=""></option>
+                            <option value="choice1">Houndstooth</option>
+                            <option value="choice2">Cultivar</option>
+                            <option value="choice3">Magnolias: Sous Le Pont</option>
+                            <option value="choice4">Cafe Victoria</option>
+                            <option value="choice5">Ascension Coffee</option>
+                            <option value="choice6">Weekend Coffee</option>
+                            <option value="choice7">Opening Bell</option>
+                            <option value="choice8">White Rock Coffee</option>
+                            <option value="choice9">Davis Street Espresso</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Have you tried all of the drinks they offer?</label>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="coffee" id="option1" value="Yes">
+                            <label for="option1" class="form-check-label">Yes</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="coffee" id="option2" value="Half">
+                            <label for="option2" class="form-check-label">About Half</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="coffee" id="option3" value="Few">
+                            <label for="option3" class="form-check-label">Only a few that I enjoy</label>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <p>What would you change about your favorite coffee shop, if anything? (Check all that apply)
+                        </p>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="check1" value="check1">
+                            <label for="check1" class="form-check-label">More Seating</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="check2" value="check2">
+                            <label for="check2" class="form-check-label">Faster WiFi/Internet Access</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="check3" value="check3">
+                            <label for="check3" class="form-check-label">More Drink Varieties</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="check4" value="check4">
+                            <label for="check4" class="form-check-label">Better Parking/More Parking Spots</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="check5" value="check5">
+                            <label for="check5" class="form-check-label">More Food Options/More Pastries</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="check6" value="check6">
+                            <label for="check6" class="form-check-label">Nothing, I love it the way it is.</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="textarea">Please provide any comments or suggestions:</label>
+                    <textarea id="textarea" class="form-control" rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-light btn-lg btn-block" id="submit">Submit</button>
+                </div>
+            </form>
         </div>
+        <footer id="footerSec" class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <div id="socialIcons">
+                        <a class="socialWrapper" href="https://github.com/EmirVelazquez" target="_blank"
+                            rel="noreferrer" aria-label="GitHub Link">
+                            <svg width="100%" height="100%" viewBox="0 0 100 100" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="socialSvg"
+                                    d="M50 0C22.3745 0 0 22.7157 0 50.7625C0 74.6187 16.1234 94.4183 37.8766 100C37.6255 99.3649 37.5021 98.475 37.5021 97.5893V88.9575H31.2511C27.8766 88.9575 24.7489 87.4368 23.3745 84.6416C21.7489 81.5959 21.4979 76.8998 17.3745 73.9793C16.1234 72.9641 17.1234 71.9488 18.4979 72.0741C21.1234 72.8345 23.2468 74.6144 25.2468 77.2757C27.2468 79.9412 28.1234 80.5763 31.8723 80.5763C33.6213 80.5763 36.3702 80.451 38.8723 80.0665C40.2468 76.511 42.6213 73.34 45.4979 71.8192C28.7489 69.7887 20.7489 61.4118 20.7489 49.9892C20.7489 45.0382 22.8723 40.3422 26.3745 36.2812C25.2511 32.3454 23.7489 24.2234 26.8766 21.0524C34.3787 21.0524 38.8766 26.0034 40 27.2692C43.7489 25.9991 47.8766 25.2387 52.1234 25.2387C56.4979 25.2387 60.4979 25.9991 64.2468 27.2692C65.3702 25.9991 69.8723 21.0524 77.3702 21.0524C80.3702 24.0982 78.9957 32.3454 77.7447 36.2812C81.2468 40.2169 83.2468 45.0382 83.2468 49.9892C83.2468 61.4118 75.3702 69.7887 58.7489 71.5644C63.3745 73.975 66.6255 80.8269 66.6255 85.9031V97.464C66.6255 97.8442 66.5021 98.2244 66.5021 98.6046C86 91.7527 100 72.9727 100 50.7625C100 22.7157 77.6255 0 50 0Z"
+                                    fill="black" />
+                            </svg>
+                        </a>
+                        <a class="socialWrapper" href="https://www.linkedin.com/in/emir-velazquez-35560b196/"
+                            target="_blank" rel="noreferrer" aria-label="LinkedIn Link">
+                            <svg width="100%" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path class="socialSvg"
+                                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" />
+                            </svg>
+                        </a>
+                        <a class="socialWrapper" href="https://www.emirvelazquez.com" target="_blank" rel="noreferrer"
+                            aria-label="Portfolio Page Link">
+                            <svg width="100%" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path class="socialSvg"
+                                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1 10.199l-3.64 1.801 3.64 1.796v2.204l-6-2.935v-2.131l6-2.934v2.199zm8 2.866l-6 2.935v-2.204l3.64-1.796-3.64-1.801v-2.199l6 2.935v2.13z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <div id="copyrightContainer">
+                        <p>
+                            Copyright &copy; 2020 Emir Velazquez
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 photoCol">
+                    <a id="photoCred"
+                        href="https://unsplash.com/@kafgaf?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+                        target="_blank" rel="noopener noreferrer"><span
+                            style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
+                                style="height:10px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:#F5F5DC"
+                                viewBox="0 0 32 32">
+                                <title>unsplash-logo</title>
+                                <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+                            </svg></span><span style="display:inline-block;padding:2px 3px;">Photo Credit: Kimiya
+                            Oveisi</span></a>
+                </div>
+            </div>
+        </footer>
     </div>
-    <div class="container" id="form-container">
-        <form id="survey-form">
-            <div class="form-group">
-                <label for="name" id="name-label">Name</label>
-                <input type="text" class="form-control" placeholder="Enter your name" id="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email" id="email-label">Email</label>
-                <input type="email" class="form-control" placeholder="Enter your email" id="email" required>
-            </div>
-            <div class="form-group">
-                <label for="number" id="number-label">Age (Optional)</label>
-                <input type="number" class="form-control" placeholder="Age" id="number" min="1" max="100">
-            </div>
-            <div class="form-group">
-                <label for="dropdown">Which coffee shop do you prefer?</label>
-                <select id="dropdown" class="form-control">
-                    <option value=""></option>
-                    <option value="choice1">Houndstooth</option>
-                    <option value="choice2">Cultivar</option>
-                    <option value="choice3">Magnolias: Sous Le Pont</option>
-                    <option value="choice4">Cafe Victoria</option>
-                    <option value="choice5">Ascension Coffee</option>
-                    <option value="choice6">Weekend Coffee</option>
-                    <option value="choice7">Opening Bell</option>
-                    <option value="choice8">White Rock Coffee</option>
-                    <option value="choice9">Davis Street Espresso</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label>Have you tried all of the drinks they offer?</label>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" name="coffee" id="option1" value="Yes">
-                    <label for="option1" class="form-check-label">Yes</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" name="coffee" id="option2" value="Half">
-                    <label for="option2" class="form-check-label">About Half</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" name="coffee" id="option3" value="Few">
-                    <label for="option3" class="form-check-label">Only a few that I enjoy</label>
-                </div>
-            </div>
-            <div class="form-group">
-                <p>What would you change about your favorite coffee shop, if anything? (Check all that apply)</p>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="check1" value="check1">
-                    <label for="check1" class="form-check-label">More Seating</label>
-                </div>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="check2" value="check2">
-                    <label for="check2" class="form-check-label">Faster WiFi/Internet Access</label>
-                </div>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="check3" value="check3">
-                    <label for="check3" class="form-check-label">More Drink Varieties</label>
-                </div>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="check4" value="check4">
-                    <label for="check4" class="form-check-label">Better Parking/More Parking Spots</label>
-                </div>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="check5" value="check5">
-                    <label for="check5" class="form-check-label">More Food Options/More Pastries</label>
-                </div>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="check6" value="check6">
-                    <label for="check6" class="form-check-label">Nothing, I love it the way it is.</label>
-                </div>
-            </div>
-            <div class="form-group">
-                <p>Please provide any comments or suggestions:</p>
-                <textarea class="form-control"></textarea>
-            </div>
-            <div class="form-group">
-                <button id="submit">Submit</button>
-            </div>
-        </form>
-    </div>
-    <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:10px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;"
-        href="https://unsplash.com/@kafgaf?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
-        target="_blank" rel="noopener noreferrer"><span style="display:inline-block;padding:2px 3px"><svg
-                xmlns="http://www.w3.org/2000/svg"
-                style="height:10px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
-                viewBox="0 0 32 32">
-                <title>unsplash-logo</title>
-                <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
-            </svg></span><span style="display:inline-block;padding:2px 3px;">Photo Credit: Kimiya
-            Oveisi</span></a>
 </body>
 <!--CDN Link for testing-->
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

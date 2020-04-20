@@ -1,7 +1,22 @@
+$primaryColor: #F5F5DC;
+$secondaryColor: #003366;
+$secondaryShade: #0074e7;
+$headerColor: rgba(0, 0, 0, 0.7);
+$formColor: rgba(0, 51, 102, 0.7);
+
+* {
+    box-sizing: border-box;
+}
+
+*:before, *:after {
+    box-sizing: border-box;
+}
+
 html {
     margin: 0;
     padding: 0;
-    min-height: 100%;
+    height: 100%;
+    position: relative;
     body {
         background: url(assets/espressoBackground.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
@@ -10,9 +25,24 @@ html {
         background-size: cover;
         font-family: "Raleway", sans-serif;
         color: #f5f5dc;
-        min-height: 100%;
+        height: 100%;
+        position: relative;
+        #main {
+            min-height: 100vh; /* will cover the 100% of viewport */
+            overflow: hidden;
+            display: block;
+            position: relative;
+            padding-bottom: 100px; /* height of your footer */
+            #footerSec {
+                height: 120px;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                background-color: $headerColor;
+            }
+        }
         #header-container {
-            background: rgba(0, 0, 0, 0.7);
+            background: $headerColor;
             border-radius: 4px;
             margin: 50px auto 30px auto;
             padding: 20px 40px;
@@ -30,9 +60,10 @@ html {
                 1px 1px 0 #000;
         }
         #form-container {
-            background: rgba(0, 51, 102, 0.6);
+            background: $formColor;
             border-radius: 4px;
             padding: 40px;
+            margin-bottom: 50px;
         }
     }
 }
@@ -43,5 +74,78 @@ html {
     #description {
         font-size: 20px;
         font-weight: 500;
+    }
+}
+
+#submit {
+    background-color:  $primaryColor;
+    color: $secondaryColor;
+    border-color: $secondaryColor;
+    &:hover{
+        background-color: $secondaryColor;
+        color: $primaryColor;
+        border-color: $primaryColor;
+    }
+}
+
+#socialIcons{
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  .socialWrapper {
+    display: block;
+    margin: 0 5px 10px 5px;
+    border: 2px solid $primaryColor;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    .socialSvg{
+      fill: $primaryColor !important;
+    }
+  }
+  .socialWrapper:hover{
+    border: 2px solid $secondaryShade;
+    .socialSvg {
+      fill: $secondaryShade !important;
+    }
+  }
+}
+
+#copyrightContainer {
+    font-size: 12px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.photoCol{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 35px;
+}
+
+#photoCred {
+    background-color: black;
+    color: #F5F5DC;
+    text-decoration: none;
+    padding: 4px 6px;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1.2;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 568px) {
+    #header-container {
+        padding: 20px 20px !important;
+    }
+    #form-container {
+        padding: 20px !important;
+    }
+    #submit{
+        border-radius: 50px;
     }
 }
