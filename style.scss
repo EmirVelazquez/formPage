@@ -3,6 +3,7 @@ $secondaryColor: #003366;
 $secondaryShade: #0074e7;
 $headerColor: rgba(0, 0, 0, 0.7);
 $formColor: rgba(0, 51, 102, 0.7);
+$formSubmit: #90ee90;
 
 * {
     box-sizing: border-box;
@@ -85,6 +86,14 @@ html {
         background-color: $secondaryColor;
         color: $primaryColor;
         border-color: $primaryColor;
+    }
+}
+
+#formSubmitted {
+    color: $formSubmit;
+    text-align: center;
+    .coffeeCup {
+        fill: $formSubmit
     }
 }
 

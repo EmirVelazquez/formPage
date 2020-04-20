@@ -80,6 +80,14 @@ html body #form-container {
   border-color: #F5F5DC;
 }
 
+#formSubmitted {
+  color: #90ee90;
+  text-align: center;
+}
+#formSubmitted .coffeeCup {
+  fill: #90ee90;
+}
+
 #socialIcons {
   padding-top: 10px;
   display: flex;
