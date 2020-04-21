@@ -7,6 +7,7 @@ Part of freeCodeCamp.org responsive web design curriculum requirement. Objective
 * HTML
 * CSS
 * Sass
+* Bootstrap
 
 ## Link
 https://emirvelazquez.github.io/formPage/
